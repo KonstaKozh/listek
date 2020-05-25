@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Izvestija';
+    src: url('Izvestija.woff2') format('woff2'),
+        url('izvestija.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

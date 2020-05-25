@@ -1,3 +1,8 @@
+@font-face {
+  font-family: izvestija;
+  src: url(../fonts/izvestija.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -50,18 +55,25 @@ label,
 }
 
 .logo-txt {
-  font-family: Roboto, sans-serif;
+  font-family: izvestija, arial, sans-serif;
   font-size: 60px;
   line-height: 1.2;
-  font-weight: 900;
+  //font-weight: 900;
   color: darkred;
+  text-shadow: 4px 4px 4px #aaa;
+  &:hover {
+    color: red;
+    text-shadow: 4px 8px 8px #aaa;
+
+  }
+
 }
 
 .phone {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: 400;
+  //font-weight: 400;
   color: black;
   text-decoration: none;
   margin: 0 5px;
