@@ -8,10 +8,10 @@ body {
 }
 
 .header {
-  background-color: rgba(236, 236, 236, 0.75);
+  background-color: #f5f5f5;
 }
 .header-wrp {
-  max-width: 1150px;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,9 +32,11 @@ label,
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 .header-menu li {
   list-style: none;
+  padding: 0 8px;
 }
 .header-menu li a {
   font-family: Montserrat, sans-serif;
@@ -43,7 +45,6 @@ label,
   font-weight: 400;
   color: black;
   text-decoration: none;
-  margin: 0 5px;
 }
 
 .logo {
@@ -56,6 +57,7 @@ label,
   font-family: izvestija, arial, sans-serif;
   font-size: 60px;
   line-height: 1.2;
+  letter-spacing: 10px;
   color: darkred;
   text-shadow: 4px 4px 4px #aaa;
 }
@@ -76,21 +78,140 @@ label,
 .slider {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .slider img {
   width: 100%;
-  position: relative;
-  filter: brightness(0.7);
+  min-height: 500px;
+  filter: brightness(0.8);
 }
-.slider h1 {
+.slider-wrp {
   width: 100%;
   position: absolute;
   top: 100px;
   left: 50%;
   margin-left: -50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider h1 {
+  width: 950px;
+  margin: 0 0 80px 0;
   color: white;
   font-family: Montserrat, sans-serif;
-  font-size: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.slider h2 {
+  margin-top: 40px;
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button {
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: Raleway, serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.services {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 40px 0 40px 0;
+}
+.services h1 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  color: black;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.services-wrp {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.services-item h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+.services-item p {
+  font-family: Montserrat, sans-serif, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.discount {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.discount:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/discount.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  filter: brightness(0.6);
+}
+.discount h1 {
+  position: relative;
+  width: 950px;
+  margin: 80px 0 80px 0;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.discount span {
+  position: relative;
+  margin-top: 40px;
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.discount button {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
