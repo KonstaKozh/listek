@@ -7,6 +7,20 @@ body {
   padding: 0;
 }
 
+h1 {
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
 .header {
   background-color: #f5f5f5;
 }
@@ -14,11 +28,13 @@ body {
   max-width: 1280px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
 }
 
 .menu-top {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -48,8 +64,7 @@ label,
 }
 
 .logo {
-  display: flex;
-  align-items: flex-end;
+  margin: 0 auto;
   text-decoration: none;
 }
 
@@ -66,13 +81,31 @@ label,
   text-shadow: 4px 8px 8px #aaa;
 }
 
-.phone {
+.header-contacts {
+  min-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-phone {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   line-height: 1.2;
   color: black;
   text-decoration: none;
-  margin: 0 5px;
+}
+.header-phone span {
+  margin-left: 5px;
+}
+
+.header-adress {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .slider {
@@ -212,7 +245,7 @@ label,
 }
 .discount button {
   position: relative;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .works {
@@ -321,6 +354,83 @@ label,
 }
 .works ol li:last-child span {
   border: none;
+}
+
+.documents {
+  padding: 40px;
+  background-color: #3b3b47;
+  color: white;
+}
+.documents-wrp {
+  margin: 0 auto;
+  max-width: 920px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.documents h2 {
+  color: white;
+}
+.documents-left {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.documents-right {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contacts {
+  background-color: #f5f5f5;
+}
+.contacts-wrp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts-txt {
+  padding-left: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+}
+.contacts h1 {
+  margin: 40px 0;
+  text-align: left;
+}
+.contacts .mail {
+  padding: 20px 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.contacts span {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.contacts p {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.copyright {
+  padding: 20px;
+  background-color: #3b3b47;
+}
+.copyright a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #999999;
 }
 
 /*# sourceMappingURL=style.css.map */
