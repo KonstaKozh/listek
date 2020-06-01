@@ -425,10 +425,10 @@ label,
 .copyright {
   padding: 20px;
   background-color: #3b3b47;
+  display: flex;
+  justify-content: space-between;
 }
 .copyright a {
-  display: block;
-  text-align: center;
   text-decoration: none;
   color: #999999;
 }
