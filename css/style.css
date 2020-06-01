@@ -62,6 +62,9 @@ label,
   color: black;
   text-decoration: none;
 }
+.header-menu li a:hover {
+  color: #cccccc;
+}
 
 .logo {
   margin: 0 auto;
@@ -106,6 +109,11 @@ label,
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   line-height: 1.2;
+  text-decoration: none;
+  color: black;
+}
+.header-adress:hover {
+  color: #cccccc;
 }
 
 .slider {
@@ -161,6 +169,10 @@ label,
   font-weight: 800;
   text-transform: uppercase;
   color: black;
+}
+.button:hover {
+  background-color: #cccccc;
+  color: white;
 }
 
 .services {
@@ -362,17 +374,13 @@ label,
   color: white;
 }
 .documents-wrp {
-  margin: 0 auto;
+  margin: 40px auto;
   max-width: 920px;
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-.documents h2 {
-  color: white;
 }
 .documents-left {
   min-width: 300px;
@@ -380,11 +388,31 @@ label,
   flex-direction: column;
   align-items: flex-start;
 }
+.documents-left a {
+  padding: 10px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.documents-left a:hover {
+  color: #cccccc;
+}
 .documents-right {
   min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+.documents-right a {
+  padding: 10px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.documents-right a:hover {
+  color: #cccccc;
 }
 
 .contacts {
@@ -411,6 +439,9 @@ label,
   font-size: 24px;
   line-height: 1.2;
 }
+.contacts .mail:hover {
+  color: #cccccc;
+}
 .contacts span {
   font-family: Montserrat, sans-serif;
   font-size: 24px;
@@ -430,6 +461,15 @@ label,
 }
 .copyright a {
   text-decoration: none;
+  color: #999999;
+}
+.copyright a:hover {
+  color: white;
+}
+.copyright span {
+  color: white;
+}
+.copyright a:hover span {
   color: #999999;
 }
 
