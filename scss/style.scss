@@ -207,7 +207,7 @@ label,
 .services {
   background-color: #f5f5f5;
   width: 100%;
-  padding: 40px 0 40px 0;
+  padding: 50px 0 30px 0;
   & h1 {
     margin: 0;
     padding: 0 0 20px 0;
@@ -267,7 +267,7 @@ label,
   & h1 {
     position: relative;
     max-width: 950px;
-    margin: 80px 0 80px 0;
+    margin: 100px 0 80px 0;
     color: white;
     font-family: Montserrat, sans-serif;
     font-size: 40px;
@@ -276,7 +276,6 @@ label,
   }
   & span {
     position: relative;
-    margin-top: 40px;
     color: white;
     font-family: Raleway, sans-serif;
     font-size: 24px;
@@ -292,7 +291,7 @@ label,
 .works {
   background-color: #f5f5f5;
   width: 100%;
-  padding: 40px 0 40px 0;
+  padding: 50px 0 40px 0;
   & h1 {
     margin: 0 auto;
     padding: 0 0 40px 0;
@@ -400,11 +399,11 @@ label,
 }
 
 .documents {
-  padding: 40px;
+  padding: 50px 40px;
   background-color: #3b3b47;
   color: white;
   &-wrp {
-    margin: 40px auto;
+    margin: 40px auto 0;
     max-width: 920px;
     //margin-top: 40px;
     display: flex;
