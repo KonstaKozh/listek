@@ -58,7 +58,7 @@ label,
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   color: black;
   text-decoration: none;
 }
@@ -92,12 +92,46 @@ label,
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.header-contacts .header-adress {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+.header-contacts .header-adress:hover {
+  color: #cccccc;
+}
+.header-contacts .work-clock {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+.header-contacts .email {
+  color: black;
+  outline: none;
+  text-decoration: underline;
+  background-position: 0 60%;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+  min-height: 19px;
+  padding: 0 0 0 21px;
+  background-image: url(../img/email.png);
+  background-size: 18px 12px;
+}
+.header-contacts .email:hover {
+  color: #ccc;
+}
 
 .header-phone {
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 600;
   color: black;
   text-decoration: none;
@@ -106,17 +140,6 @@ label,
 }
 .header-phone span {
   margin-left: 5px;
-}
-
-.header-adress {
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  text-decoration: none;
-  color: black;
-}
-.header-adress:hover {
-  color: #cccccc;
 }
 
 .slider {
@@ -437,12 +460,19 @@ label,
   margin: 40px 0;
   text-align: left;
 }
-.contacts .mail {
-  padding: 20px 0;
+.contacts .header-phone {
+  margin: 0;
+}
+.contacts .email {
+  padding: 20px 0 20px 30px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/email.png);
+  background-size: 24px 16px;
   font-size: 24px;
   line-height: 1.2;
 }
-.contacts .mail:hover {
+.contacts .email:hover {
   color: #cccccc;
 }
 .contacts span {
@@ -454,6 +484,9 @@ label,
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 1.2;
+}
+.contacts .work-clock {
+  font-size: 16px;
 }
 
 .copyright {
