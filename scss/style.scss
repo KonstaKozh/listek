@@ -518,7 +518,13 @@ label,
 }
 
 @media only screen and (max-width: 1050px) {
-  .script {
+  .contacts-wrp {
+    display: block;
+    width: 100%;
+    //display: flex;
+    //flex-wrap: wrap;
+  }
+  .contacts .script {
     display: block;
     width: 100%;
   }
