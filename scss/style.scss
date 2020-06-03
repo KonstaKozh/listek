@@ -452,6 +452,9 @@ label,
     display: flex;
     flex-wrap: wrap;
   }
+  & .script {
+    width: 50%;
+  }
   &-txt {
     padding-left: 50px;
     width: 45%;
@@ -512,4 +515,15 @@ label,
   & a:hover span {
     color: #999999;
   }
+}
+
+@media only screen and (max-width: 1050px) {
+  .script {
+    display: block;
+    width: 100%;
+  }
+  .contacts-txt {
+    width: 100%;
+  }
+
 }
