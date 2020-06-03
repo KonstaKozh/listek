@@ -513,7 +513,6 @@ label,
 
 @media only screen and (max-width: 1050px) {
   .contacts-wrp {
-    display: block;
     width: 100%;
   }
 
@@ -524,6 +523,41 @@ label,
 
   .contacts-txt {
     width: 100%;
+    padding: 0 40px 50px;
+  }
+  .contacts-txt h1 {
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .header-wrp {
+    padding: 10px 0;
+  }
+
+  .slider img {
+    min-height: 300px;
+  }
+  .slider-wrp {
+    top: 30px;
+  }
+  .slider h1 {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .slider .button {
+    margin: 40px auto;
+  }
+  .slider h2 {
+    margin: 0 auto;
+  }
+
+  .services-wrp {
+    justify-content: center;
   }
 }
 
