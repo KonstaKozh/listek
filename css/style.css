@@ -154,18 +154,18 @@ label,
 }
 .slider-wrp {
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 100px;
   left: 50%;
   margin-left: -50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .slider h1 {
   max-width: 950px;
-  margin: 0 0 80px 0;
+  margin: 0 auto;
   color: white;
   font-family: Montserrat, sans-serif;
   font-size: 40px;
@@ -174,7 +174,7 @@ label,
   letter-spacing: 2px;
 }
 .slider h2 {
-  margin-top: 40px;
+  margin: 0 auto;
   color: white;
   font-family: Raleway, sans-serif;
   font-size: 20px;
@@ -231,14 +231,26 @@ label,
   margin: 20px;
 }
 .services-item h2 {
+  margin: 10px auto 10px;
+  min-height: 60px;
   font-family: Raleway, sans-serif;
   font-size: 24px;
   text-align: center;
 }
 .services-item p {
+  margin: 0 auto;
+  min-height: 76px;
   font-family: Montserrat, sans-serif, sans-serif;
   font-size: 16px;
   text-align: center;
+}
+.services-item:after {
+  margin: 10px 0 0 0;
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #cccccc;
 }
 
 .discount {
@@ -556,8 +568,21 @@ label,
     margin: 0 auto;
   }
 
+  .services h1 {
+    padding: 0;
+  }
+
   .services-wrp {
     justify-content: center;
+  }
+
+  .discount {
+    min-height: 360px;
+  }
+
+  .discount h1 {
+    font-size: 30px;
+    margin: 40px;
   }
 }
 
