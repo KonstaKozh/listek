@@ -259,6 +259,7 @@ label,
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   position: relative;
 }
 .discount:before {
@@ -277,7 +278,6 @@ label,
 .discount h1 {
   position: relative;
   max-width: 950px;
-  margin: 100px 0 80px 0;
   color: white;
   font-family: Montserrat, sans-serif;
   font-size: 40px;
@@ -294,7 +294,6 @@ label,
 }
 .discount button {
   position: relative;
-  margin-top: 80px;
 }
 
 .works {
@@ -350,7 +349,7 @@ label,
   font-family: Raleway, sans-serif;
   font-size: 24px;
   text-align: right;
-  padding: 3px 80px 10px;
+  padding: 3px 80px 10px 0;
 }
 .works ol li:nth-child(odd) span {
   display: block;
@@ -389,7 +388,7 @@ label,
   font-family: Raleway, sans-serif;
   font-size: 24px;
   text-align: left;
-  padding: 5px 70px 10px;
+  padding: 5px 0 10px 70px;
 }
 .works ol li:nth-child(even) span {
   display: block;
@@ -551,11 +550,14 @@ label,
     padding: 10px 0;
   }
 
+  .slider {
+    max-height: 360px;
+  }
   .slider img {
-    min-height: 300px;
+    min-height: 100%;
   }
   .slider-wrp {
-    top: 30px;
+    height: 100%;
   }
   .slider h1 {
     font-size: 30px;
@@ -582,7 +584,31 @@ label,
 
   .discount h1 {
     font-size: 30px;
-    margin: 40px;
+  }
+
+  .works ol li:nth-child(odd) h2 {
+    padding: 3px 30px 10px 0;
+  }
+
+  .works ol li:nth-child(odd) span {
+    padding: 0 25px 18px 0;
+  }
+
+  .works ol li:nth-child(even) h2 {
+    padding: 5px 0 10px 30px;
+  }
+
+  .works ol li:nth-child(even) span {
+    padding: 0 0 20px 30px;
+  }
+
+  .documents-wrp {
+    justify-content: center;
+  }
+
+  .documents-left,
+.documents-right {
+    align-items: center;
   }
 }
 
