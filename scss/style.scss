@@ -28,8 +28,8 @@ h2  {
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
   }
 }
@@ -570,9 +570,9 @@ label,
       font-size: 30px;
       margin: 0 auto;
     }
-    & .button {
-      margin: 40px auto;
-    }
+    //& .button {
+    //  margin: 40px auto;
+    //}
     & h2 {
       margin: 0 auto;
     }
@@ -612,4 +612,46 @@ label,
   .documents-right {
     align-items: center;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-contacts {
+    align-items: center;
+  }
+  .header-phone {
+    margin: 10px auto 0;
+  }
+
+  .slider {
+    max-height: 260px;
+  }
+  .slider h1 {
+    font-size: 22px;
+  }
+
+  .works ol li:nth-child(odd),
+  .works ol li:nth-child(even) {
+    text-align: left;
+    padding: 0;
+    & h2 {
+      padding: 3px 30px 10px 60px;
+      text-align: left;
+      font-size: 22px;
+    }
+    & span {
+      margin-left: 30px;
+      padding: 0 25px 18px 40px;
+      text-align: left;
+      border: none;
+      border-left: 2px solid #000000;
+    }
+  }
+  .works ol li:last-child span {
+    border: none;
+  }
+  .works ol li:nth-child(odd):after,
+  .works ol li:nth-child(even):after {
+    left: 10px;
+  }
+
 }
