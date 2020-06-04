@@ -661,11 +661,14 @@ label,
     left: 10px;
   }
 
+  .contacts {
+    max-height: 300px;
+  }
   .contacts-txt {
     padding: 0 10px 50px;
   }
   .copyright a {
-    font-family: Raleway;
+    font-family: Raleway sans-serif;
     font-size: 10px;
   }
 }
