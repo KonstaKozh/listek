@@ -609,6 +609,10 @@ label,
   }
 }
 @media only screen and (max-width: 480px) {
+  .header-wrp {
+    flex-direction: column;
+  }
+
   .header-contacts {
     align-items: center;
   }
@@ -621,8 +625,8 @@ label,
     max-height: 260px;
   }
 
-  .slider h1 {
-    font-size: 22px;
+  .slider h1, h2 {
+    font-size: 19px;
   }
 
   .works ol li:nth-child(odd),
@@ -652,6 +656,15 @@ label,
   .works ol li:nth-child(odd):after,
 .works ol li:nth-child(even):after {
     left: 10px;
+  }
+
+  .contacts-txt {
+    padding: 0 10px 50px;
+  }
+
+  .copyright a {
+    font-family: Raleway;
+    font-size: 10px;
   }
 }
 
