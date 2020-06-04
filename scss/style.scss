@@ -628,8 +628,12 @@ label,
   .slider {
     max-height: 260px;
   }
-  .slider h1, h2 {
+  .slider h1 {
     font-size: 19px;
+  }
+  .slider h2 {
+    font-size: 18px;
+    font-weight: normal;
   }
 
   .works ol li:nth-child(odd),
