@@ -460,6 +460,7 @@ label,
 }
 .contacts .script {
   width: 50%;
+  min-height: 500px;
 }
 .contacts-txt {
   padding-left: 50px;
