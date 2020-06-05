@@ -222,7 +222,7 @@ label,
   &:before {
     content: "Квалифицированный ремонт оргтехники";
     position: absolute;
-    max-width: 950px;
+    //max-width: 950px;
     top: -200%;
     left: -120%;
     color: white;
@@ -234,10 +234,10 @@ label,
   }
   &:after {
     content: "с гарантией и доставкой в офис за наш счёт";
-    max-width: 950px;
+    width: 950px;
     position: absolute;
     top: 200%;
-    left: -120%;
+    left: -225%;
     color: white;
     font-family: Raleway, sans-serif;
     font-size: 20px;
