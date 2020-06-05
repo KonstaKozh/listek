@@ -643,7 +643,7 @@ label,
 .works ol li:nth-child(even) h2 {
     padding: 3px 30px 10px 60px;
     text-align: left;
-    font-size: 22px;
+    font-size: 20px;
   }
   .works ol li:nth-child(odd) span,
 .works ol li:nth-child(even) span {
