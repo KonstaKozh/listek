@@ -161,7 +161,7 @@ label,
     &:before {
       content: "";
       position: absolute;
-      max-width: 950px;
+      max-width: 90%;
       top: 15%;
       margin: 0 auto;
       color: white;
@@ -176,7 +176,7 @@ label,
     }
     &:after {
       content: "";
-      width: 950px;
+      width: 90%;
       position: absolute;
       bottom: 15%;
       margin: 0 auto;
@@ -610,17 +610,17 @@ label,
       min-height: 100%;
     }
     &-wrp {
+      max-width: 100%;
       height: 100%;
     }
-    & h1 {
-      font-size: 30px;
-      margin: 0 auto;
+    &:before {
+      //max-width: 90%;
+      font-size: 34px;
     }
-    //& .button {
-    //  margin: 40px auto;
-    //}
-    & h2 {
-      margin: 0 auto;
+    &:after {
+      //max-width: 90%;
+      font-size: 18px;
+      font-weight: normal;
     }
   }
 
@@ -675,11 +675,11 @@ label,
     max-height: 260px;
   }
   .slider-wrp:before {
-    max-width: 320px;
+    //max-width: 90%;
     font-size: 19px;
   }
   .slider-wrp:after {
-    max-width: 320px;
+    //max-width: 90%;
     font-size: 16px;
     font-weight: normal;
   }
