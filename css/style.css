@@ -175,6 +175,9 @@ label,
   line-height: 120%;
   animation: wrp-anim-before 12s linear infinite;
 }
+.slider-wrp:hover:before {
+  animation-play-state: paused;
+}
 .slider-wrp:after {
   content: "";
   width: 90%;
