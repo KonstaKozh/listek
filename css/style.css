@@ -152,7 +152,7 @@ label,
 .slider-wrp {
   width: 100%;
   height: 100%;
-  animation: slider-anim 12s linear infinite;
+  animation: slider-anim 12s linear infinite both;
   position: relative;
   display: flex;
   flex-direction: column;
