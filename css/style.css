@@ -93,7 +93,7 @@ label,
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.header-contacts .header-adress {
+.header-contacts .header-adr {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -101,7 +101,7 @@ label,
   text-decoration: none;
   color: black;
 }
-.header-contacts .header-adress:hover {
+.header-contacts .header-adr:hover {
   color: #cccccc;
 }
 .header-contacts .work-clock {
