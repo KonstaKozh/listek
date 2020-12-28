@@ -96,14 +96,12 @@ label,
   .header-contacts .email {
     color: black;
     outline: none;
-    text-decoration: underline;
-    background-position: 0 60%;
-    background-repeat: no-repeat;
     font-size: 1rem;
     min-height: 19px;
-    padding: 0 0 0 21px;
-    background-image: url(../img/email.png);
-    background-size: 18px 12px; }
+    padding: 0; }
+    .header-contacts .email:before {
+      content: "\1F582";
+      margin-right: 0.5em; }
     .header-contacts .email:hover {
       color: #ccc; }
 
@@ -124,6 +122,8 @@ label,
   .header-phone a:before {
     content: "\260e";
     margin-right: 0.5em; }
+  .header-phone a:hover {
+    color: #ccc; }
 
 .aside {
   width: 100%;
@@ -489,11 +489,18 @@ label,
     .contacts-txt a[href^="tel:"]:before {
       content: "\260e";
       margin-right: 0.5em; }
+    .contacts-txt a:hover {
+      color: #ccc; }
   .contacts h1 {
     margin: 40px 0;
     text-align: left; }
+  .contacts .telegram {
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 24px;
+    line-height: 1.2; }
   .contacts .email {
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 24px;
     line-height: 1.2; }
     .contacts .email:before {
