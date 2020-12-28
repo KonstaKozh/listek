@@ -316,7 +316,7 @@ label,
 .discount {
   width: 100%;
   min-height: 500px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -355,6 +355,31 @@ label,
   & button {
     position: relative;
     //margin-top: 80px;
+  }
+}
+
+.faqs {
+  padding: 50px 40px;
+  background-color: #3b3b47;
+  color: white;
+  &-wrp {
+    max-width: 920px;
+    margin: 40px auto 0;
+    padding: 0 20px 0 120px;
+    border: solid 1px white;
+    border-radius: 10px;
+    font-family: Raleway, sans-serif;
+    position: relative;
+  }
+  h3:before {
+    position: absolute;
+    left: 30px;
+    content: "Клиент:"
+  }
+  p:before {
+    position: absolute;
+    left: 30px;
+    content: "Сервис:"
   }
 }
 
@@ -647,6 +672,7 @@ label,
   }
 
   .discount {
+    display: none;
     min-height: 360px;
   }
   .discount h1 {
