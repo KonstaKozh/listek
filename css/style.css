@@ -117,8 +117,13 @@ label,
   text-decoration: none;
   display: flex;
   flex-direction: column; }
-  .header-phone span {
-    margin-left: 5px; }
+  .header-phone a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black; }
+  .header-phone a:before {
+    content: "\260e";
+    margin-right: 0.5em; }
 
 .aside {
   width: 100%;
@@ -474,19 +479,26 @@ label,
     flex-direction: column;
     align-content: flex-start;
     justify-content: center; }
+    .contacts-txt a[href^="tel:"] {
+      margin: 0;
+      text-decoration: none;
+      color: black;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+      line-height: 1.2; }
+    .contacts-txt a[href^="tel:"]:before {
+      content: "\260e";
+      margin-right: 0.5em; }
   .contacts h1 {
     margin: 40px 0;
     text-align: left; }
-  .contacts .header-phone {
-    margin: 0; }
   .contacts .email {
-    padding: 20px 0 20px 30px;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    background-image: url(../img/email.png);
-    background-size: 24px 16px;
+    padding: 20px 0;
     font-size: 24px;
     line-height: 1.2; }
+    .contacts .email:before {
+      content: "\1F582";
+      margin-right: 0.5em; }
     .contacts .email:hover {
       color: #cccccc; }
   .contacts span {
