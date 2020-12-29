@@ -88,10 +88,23 @@ label,
     //font-weight: 900;
     color: darkred;
     text-shadow: 4px 4px 4px #aaa;
+    position: relative;
     &:hover {
       color: red;
       text-shadow: 4px 8px 8px #aaa;
     }
+  }
+  &-txt:before {
+    content: '';
+    width: 80px;
+    height: 40px;
+    background-image: url("../img/logo_listek_2.png");
+    background-size: 80px 40px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 1em;
   }
 }
 

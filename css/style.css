@@ -73,10 +73,22 @@ label,
     line-height: 1.2;
     letter-spacing: 10px;
     color: darkred;
-    text-shadow: 4px 4px 4px #aaa; }
+    text-shadow: 4px 4px 4px #aaa;
+    position: relative; }
     .logo-txt:hover {
       color: red;
       text-shadow: 4px 8px 8px #aaa; }
+  .logo-txt:before {
+    content: '';
+    width: 80px;
+    height: 40px;
+    background-image: url("../img/logo_listek_2.png");
+    background-size: 80px 40px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 1em; }
 
 .header-contacts {
   min-height: 54px;
