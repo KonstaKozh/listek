@@ -129,6 +129,7 @@ label,
       margin-right: 0.5em;
       text-decoration: none;
       outline: none;
+      display: inline-block;
     }
     &:hover {
       color: #ccc;
@@ -624,6 +625,7 @@ label,
     &:before {
       content: "\1F582";
       margin-right: 0.5em;
+      display: inline-block;
     }
     &:hover {
       color: #cccccc;

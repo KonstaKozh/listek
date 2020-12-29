@@ -108,7 +108,8 @@ label,
       content: "\1F582";
       margin-right: 0.5em;
       text-decoration: none;
-      outline: none; }
+      outline: none;
+      display: inline-block; }
     .header-contacts .email:hover {
       color: #ccc; }
 
@@ -518,7 +519,8 @@ label,
     line-height: 1.2; }
     .contacts .email:before {
       content: "\1F582";
-      margin-right: 0.5em; }
+      margin-right: 0.5em;
+      display: inline-block; }
     .contacts .email:hover {
       color: #cccccc; }
   .contacts span {
