@@ -35,9 +35,18 @@ h2  {
 }
 
 .menu-top {
+  max-width: 520px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  & p {
+    margin: 0;
+    padding: 0 5px;
+    color: #ffffff;
+    background-color: crimson;
+  }
 }
 
 label,
@@ -50,6 +59,7 @@ label,
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   & li {
     list-style: none;
     padding: 0 8px;
