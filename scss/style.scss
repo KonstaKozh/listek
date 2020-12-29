@@ -120,12 +120,15 @@ label,
   & .email {
     color: black;
     outline: none;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     min-height: 19px;
     padding: 0;
     &:before {
       content: "\1F582";
       margin-right: 0.5em;
+      text-decoration: none;
+      outline: none;
     }
     &:hover {
       color: #ccc;
