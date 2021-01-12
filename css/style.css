@@ -22,6 +22,7 @@ h2 {
   background-color: #f5f5f5; }
   .header-wrp {
     max-width: 1280px;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +37,7 @@ h2 {
   align-items: center;
   flex-wrap: wrap; }
   .menu-top p {
+    display: none;
     margin: 0;
     padding: 0 5px;
     color: #ffffff;
@@ -72,6 +74,7 @@ label,
     font-size: 60px;
     line-height: 1.2;
     letter-spacing: 10px;
+    padding-left: 1.3em;
     color: darkred;
     text-shadow: 4px 4px 4px #aaa;
     position: relative; }
@@ -87,8 +90,8 @@ label,
     display: block;
     position: absolute;
     background-repeat: no-repeat;
-    top: 0;
-    left: 1.3em; }
+    top: 0.2em;
+    left: -0.2em; }
 
 .header-contacts {
   min-height: 54px;
@@ -164,6 +167,7 @@ label,
     color: #ccc; }
 
 .aside {
+  display: none;
   width: 100%;
   max-height: 960px;
   padding-top: 56.25%;
