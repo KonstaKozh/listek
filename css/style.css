@@ -229,6 +229,7 @@ label,
 @keyframes slider-anim {
   0% {
     background-image: url(../img/slider1.jpg);
+    filter: blur();
     background-size: cover; }
   50% {
     background-image: url(../img/slider2.jpg);
