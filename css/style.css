@@ -4,7 +4,8 @@
   src: url(../fonts/izvestija.ttf); }
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #ded4d4; }
 
 h1 {
   margin: 0 auto;
@@ -18,10 +19,14 @@ h2 {
   font-size: 20px;
   color: black; }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
 .header {
   background-color: #f5f5f5; }
   .header-wrp {
-    max-width: 1280px;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -177,7 +182,8 @@ label,
   background-repeat: no-repeat; }
 
 .slider {
-  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 500px;
   display: flex;
   flex-direction: column; }
@@ -348,6 +354,8 @@ label,
     position: relative; }
 
 .faqs {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 50px 40px;
   background-color: #3b3b47;
   color: white; }
@@ -465,6 +473,8 @@ label,
     border: none; }
 
 .documents {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 50px 40px;
   background-color: #3b3b47;
   color: white; }
@@ -507,8 +517,11 @@ label,
   display: none; }
 
 .contacts {
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: #f5f5f5; }
   .contacts-wrp {
+    width: 100%;
     display: flex;
     flex-wrap: wrap; }
   .contacts .script {
@@ -559,19 +572,19 @@ label,
   .contacts .work-clock {
     font-size: 16px; }
 
-.copyright {
+.footer {
   padding: 20px;
   background-color: #3b3b47;
   display: flex;
   justify-content: space-between; }
-  .copyright a {
+  .footer a {
     text-decoration: none;
     color: #999999; }
-  .copyright a:hover {
+  .footer a:hover {
     color: white; }
-  .copyright span {
+  .footer span {
     color: white; }
-  .copyright a:hover span {
+  .footer a:hover span {
     color: #999999; }
 
 @media only screen and (max-width: 1050px) {

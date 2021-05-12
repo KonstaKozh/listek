@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #ded4d4;
 }
 
 h1 {
@@ -22,10 +23,16 @@ h2  {
   color: black;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .header {
   background-color: #f5f5f5;
   &-wrp {
-    max-width: 1280px;
+    //max-width: 1280px;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -163,10 +170,7 @@ label,
 }
 
 .telegram {
-  //display: flex;
-  //align-items: center;
   text-decoration: none;
-  //padding: 10px 0 0;
   font-size: 24px;
   line-height: 1.2;
   &-svg {
@@ -213,7 +217,8 @@ label,
 }
 
 .slider {
-  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -417,6 +422,8 @@ label,
 }
 
 .faqs {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 50px 40px;
   background-color: #3b3b47;
   color: white;
@@ -552,6 +559,8 @@ label,
 }
 
 .documents {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 50px 40px;
   background-color: #3b3b47;
   color: white;
@@ -604,8 +613,11 @@ label,
 }
 
 .contacts {
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: #f5f5f5;
   &-wrp {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -672,7 +684,7 @@ label,
   }
 }
 
-.copyright {
+.footer {
   padding: 20px;
   background-color: #3b3b47;
   display: flex;
