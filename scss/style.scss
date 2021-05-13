@@ -170,6 +170,7 @@ label,
 
 .telegram {
   text-decoration: none;
+  font-family: Raleway sans-serif;
   font-size: 24px;
   line-height: 1.2;
   &-svg {
@@ -267,7 +268,6 @@ label,
 @keyframes slider-anim {
   0% {
     background-image: url(../img/slider1.jpg);
-    filter: blur();
     background-size: cover;
   }
   50% {
@@ -616,6 +616,7 @@ label,
   max-width: 1280px;
   margin: 0 auto;
   background-color: #f5f5f5;
+
   &-wrp {
     width: 100%;
     display: flex;
@@ -636,7 +637,7 @@ label,
         margin: 0;
         text-decoration: none;
         color: black;
-        font-family: Montserrat, sans-serif;
+        font-family: Raleway sans-serif;
         font-size: 24px;
         line-height: 1.2;
       }
@@ -655,11 +656,17 @@ label,
   }
   & .telegram {
     padding-top: 10px;
+    //font-family: Raleway sans-serif;
+    &:before {
+      content: url("data:image/svg+xml,%3Csvg height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12'/%3E%3Cpath d='m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z' fill='%23fff'/%3E%3C/svg%3E");
+      margin-right: 0.5em;
+    }
   }
   & .email {
     padding: 10px 0;
     font-size: 24px;
     line-height: 1.2;
+    font-family: Raleway sans-serif;
     &:before {
       content: "\1F582";
       margin-right: 0.5em;
@@ -807,7 +814,6 @@ label,
     font-size: 19px;
   }
   .slider-wrp:after {
-    //max-width: 90%;
     font-size: 16px;
     font-weight: normal;
   }
@@ -838,7 +844,7 @@ label,
   }
 
   .contacts {
-    //max-height: 300px;
+    font-family: Montserrat, sans-serif;
   }
   .contacts-txt {
     padding: 0 10px 50px;
