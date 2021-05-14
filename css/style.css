@@ -559,7 +559,7 @@ label,
       width: 26px;
       height: 26px;
       content: '';
-      background: url(../img/telegram_2019_Logo.svg) no-repeat 50% 50%;
+      background: url(../img/Telegram_2019_Logo.svg) no-repeat 50% 50%;
       margin: 0 0.3em -0.2em 0; }
     .contacts .contact-telegram:hover:before {
       filter: brightness(1.4); }
@@ -672,10 +672,120 @@ label,
     align-items: center; } }
 @media only screen and (max-width: 480px) {
   .header-wrp {
+    display: block; }
+
+  .menu-top {
+    display: contents; }
+
+  .header-menu {
+    visibility: hidden;
+    height: 0; }
+
+  .logo {
+    margin: 1em; }
+    .logo-txt {
+      padding-left: 1.3em;
+      font-size: 40px; }
+      .logo-txt:before {
+        background-size: 50px 32px;
+        left: 0.05em; }
+
+  label {
+    display: inline-block;
+    margin: 0px 20px 0 0;
+    float: right;
+    width: 30px;
+    height: 40px;
+    position: relative; }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    height: 4px;
+    background-color: #767676; }
+    .burger:before {
+      position: absolute;
+      display: block;
+      left: 0;
+      top: -10px;
+      width: 100%;
+      height: 4px;
+      background-color: #767676;
+      content: ""; }
+    .burger:after {
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 10px;
+      width: 100%;
+      height: 4px;
+      background-color: #767676;
+      content: ""; }
+
+  label:hover .burger {
+    background-color: #c7b299; }
+
+  label:hover .burger:after {
+    background-color: #c7b299; }
+
+  label:hover .burger:before {
+    background-color: #c7b299; }
+
+  .menu {
+    height: 0;
+    visibility: hidden;
+    margin: 0 auto;
+    width: 100%;
     flex-direction: column; }
 
+  .menu li {
+    text-align: center;
+    background-color: transparent;
+    padding: 15px 0;
+    border-bottom: 1px solid white; }
+
+  .menu li:first-child {
+    border-top: 1px solid white; }
+
+  .menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 5px; }
+
+  .menu li:hover {
+    background-color: #c7b299; }
+
+  .menu li a:hover {
+    color: white; }
+
+  input[type="checkbox"]:checked ~ .menu {
+    height: auto;
+    visibility: visible; }
+
+  input[type="checkbox"]:checked ~ .menu li a {
+    font-size: 14px; }
+
+  input[type="checkbox"]:checked ~ label .burger {
+    background: none; }
+
+  input[type="checkbox"]:checked ~ label .burger:before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.5s; }
+
+  input[type="checkbox"]:checked ~ label .burger:after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.5s; }
+
   .header-contacts {
-    align-items: center; }
+    align-items: center;
+    margin-top: 10px; }
 
   .header-phone {
     margin: 10px auto 0; }
