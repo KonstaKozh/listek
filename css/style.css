@@ -559,7 +559,7 @@ label,
       width: 26px;
       height: 26px;
       content: '';
-      background: url(../img/Telegram_2019_Logo.svg) no-repeat 50% 50%;
+      background: url(../img/telegram_2019_Logo.svg) no-repeat 50% 50%;
       margin: 0 0.3em -0.2em 0; }
     .contacts .contact-telegram:hover:before {
       filter: brightness(1.4); }
