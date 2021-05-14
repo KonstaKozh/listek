@@ -125,27 +125,25 @@ label,
   .header-contacts-wrp {
     width: 100%;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .header-contacts .email {
     color: black;
     outline: none;
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     min-height: 19px;
-    padding: 0; }
-    .header-contacts .email:before {
-      content: "\1F582";
-      margin-right: 0.5em;
-      text-decoration: none;
-      outline: none;
-      display: inline-block; }
+    padding: 0;
+    display: flex;
+    align-items: center; }
+    .header-contacts .email-svg {
+      padding-right: 5px;
+      fill: #039be5; }
     .header-contacts .email:hover {
-      color: #ccc; }
+      filter: opacity(0.3); }
 
 .telegram {
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 1.2; }
+  font-size: 0; }
   .telegram-svg {
     fill: #039be5; }
   .telegram-svg:hover {
@@ -549,18 +547,21 @@ label,
   .contacts h1 {
     margin: 40px 0;
     text-align: left; }
-  .contacts .telegram {
+  .contacts .contact-telegram {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.2;
     padding-top: 15px;
     font: 24px/18px Tahoma,sans-serif,Arial,Helvetica;
     color: #28a7e8; }
-    .contacts .telegram:before {
+    .contacts .contact-telegram:before {
       display: inline-block;
       width: 26px;
       height: 26px;
       content: '';
       background: url(../img/Telegram_2019_Logo.svg) no-repeat 50% 50%;
       margin: 0 0.3em -0.2em 0; }
-    .contacts .telegram:hover:before {
+    .contacts .contact-telegram:hover:before {
       filter: brightness(1.4); }
   .contacts .email {
     padding: 16px 0;
@@ -573,10 +574,11 @@ label,
       display: inline-block;
       width: 26px;
       height: 26px;
-      content: "\1F582";
-      margin-right: 0.5em; }
-    .contacts .email:hover {
-      color: #cccccc; }
+      content: '';
+      background: url(../img/envelope.svg) no-repeat 50% 50%;
+      margin: 0 0.7em -0.2em 0; }
+    .contacts .email:hover:before {
+      filter: brightness(1.4); }
   .contacts span {
     font-family: Montserrat, sans-serif;
     font-size: 24px;

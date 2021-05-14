@@ -147,6 +147,7 @@ label,
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   & .email {
     color: black;
@@ -155,23 +156,20 @@ label,
     font-size: 1rem;
     min-height: 19px;
     padding: 0;
-    &:before {
-      content: "\1F582";
-      margin-right: 0.5em;
-      text-decoration: none;
-      outline: none;
-      display: inline-block;
+    display: flex;
+    align-items: center;
+    &-svg {
+      padding-right: 5px;
+      fill: #039be5;
     }
     &:hover {
-      color: #ccc;
+      filter: opacity(0.3);
     }
   }
 }
 
 .telegram {
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: 0;
   &-svg {
     fill: #039be5;
   }
@@ -653,7 +651,10 @@ label,
     margin: 40px 0;
     text-align: left;
   }
-  & .telegram {
+  & .contact-telegram {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.2;
     padding-top: 15px;
     font: 24px/18px Tahoma,sans-serif,Arial,Helvetica;
     color: #28a7e8;
@@ -681,11 +682,12 @@ label,
       display: inline-block;
       width: 26px;
       height: 26px;
-      content: "\1F582";
-      margin-right: 0.5em;
+      content: '';
+      background: url(../img/envelope.svg) no-repeat 50% 50%;
+      margin: 0 0.7em -0.2em 0;
     }
-    &:hover {
-      color: #cccccc;
+    &:hover:before {
+      filter: brightness(1.4);
     }
   }
     & span {
