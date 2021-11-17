@@ -2,6 +2,30 @@
   font-family: izvestija;
   src: url(../fonts/izvestija.ttf);
 }
+@font-face {
+  font-family: Raleway, sans-serif;
+  src: url("../fonts/Raleway/Raleway-Regular.woff2"),
+  url("../fonts/Raleway/Raleway-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat, sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2"),
+  url("../fonts/Montserrat/Montserrat-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url("../fonts/Roboto/Roboto-Regular.woff2"),
+  url("../fonts/Roboto/Roboto-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;
@@ -462,86 +486,68 @@ label,
     counter-reset: num;
     box-sizing: border-box;
   }
-  & ol li:nth-child(odd) {
+
+  & ol li:nth-child(odd),
+    ol li:nth-child(even) {
     position: relative;
+    & h2 {
+      margin: 3px 0 0;
+      font-family: Raleway, sans-serif;
+      font-size: 24px;
+    }
+    & span {
+      display: block;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    &:after {
+      position: absolute;
+      left: calc(50% - 21px);
+      top: 0;
+      content: counter(num);
+      counter-increment: num;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+      width: 30px;
+      height: 30px;
+      background: #000;
+      color: white;
+      border-radius: 50%;
+      border: 1px solid #000;
+      text-align: center;
+      font-weight: 700;
+      padding: 5px;
+    }
+  }
+  & ol li:nth-child(odd) {
     padding-right: calc(50% - 1px);
     display: flex;
     flex-direction: column;
     justify-content: right;
     text-align: right;
-    &:after {
-      position: absolute;
-      left: calc(50% - 21px);
-      top: 0;
-      content: counter(num);
-      counter-increment: num;
-      font-family: Montserrat, sans-serif;
-      font-size: 24px;
-      width: 30px;
-      height: 30px;
-      background: #000;
-      color: white;
-      border-radius: 50%;
-      border: 1px solid #000;
-      text-align: center;
-      font-weight: 700;
-      padding: 5px;
-    }
     & h2 {
-      margin: 3px 0 0;
-      font-family: Raleway, sans-serif;
-      font-size: 24px;
       text-align: right;
       padding: 3px 80px 10px 0;
     }
     & span {
-      display: block;
-      font-family: Montserrat, sans-serif;
-      font-size: 16px;
       text-align: right;
       padding: 0 70px 18px 0;
       border-right: 2px solid #000000;
-      box-sizing: border-box;
     }
   }
   & ol li:nth-child(even) {
-    position: relative;
     text-align: left;
     padding-left: calc(50% - 1px);
-    &:after {
-      position: absolute;
-      left: calc(50% - 21px);
-      top: 0;
-      content: counter(num);
-      counter-increment: num;
-      font-family: Montserrat, sans-serif;
-      font-size: 24px;
-      width: 30px;
-      height: 30px;
-      background: #000;
-      color: white;
-      border-radius: 50%;
-      border: 1px solid #000;
-      text-align: center;
-      font-weight: 700;
-      padding: 5px;
-    }
     & h2 {
-      margin: 3px 0 0;
-      font-family: Raleway, sans-serif;
-      font-size: 24px;
       text-align: left;
       padding: 5px 0 10px 70px;
     }
     & span {
-      display: block;
-      font-family: Montserrat, sans-serif, sans-serif;
-      font-size: 16px;
       text-align: left;
       padding: 0 0 20px 70px;
       margin-bottom: 3px;
       border-left: 2px solid #000000;
-      box-sizing: border-box;
     }
   }
   & ol li:last-child {
@@ -693,7 +699,7 @@ label,
   }
 }
 
-.copyright {
+.footer {
   padding: 20px;
   background-color: #3b3b47;
   display: flex;
@@ -812,11 +818,9 @@ label,
     max-height: 260px;
   }
   .slider-wrp:before {
-    //max-width: 90%;
     font-size: 19px;
   }
   .slider-wrp:after {
-    //max-width: 90%;
     font-size: 16px;
     font-weight: normal;
   }

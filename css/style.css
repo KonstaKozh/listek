@@ -3,6 +3,27 @@
   font-family: izvestija;
   src: url(../fonts/izvestija.ttf);
 }
+@font-face {
+  font-family: Raleway, sans-serif;
+  src: url("../fonts/Raleway/Raleway-Regular.woff2"), url("../fonts/Raleway/Raleway-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat, sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url("../fonts/Roboto/Roboto-Regular.woff2"), url("../fonts/Roboto/Roboto-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   margin: 0;
   padding: 0;
@@ -462,53 +483,24 @@ label,
   counter-reset: num;
   box-sizing: border-box;
 }
-.works ol li:nth-child(odd) {
+.works ol li:nth-child(odd),
+.works ol li:nth-child(even) {
   position: relative;
-  padding-right: calc(50% - 1px);
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  text-align: right;
 }
-.works ol li:nth-child(odd):after {
-  position: absolute;
-  left: calc(50% - 21px);
-  top: 0;
-  content: counter(num);
-  counter-increment: num;
-  font-family: Montserrat, sans-serif;
-  font-size: 24px;
-  width: 30px;
-  height: 30px;
-  background: #000;
-  color: white;
-  border-radius: 50%;
-  border: 1px solid #000;
-  text-align: center;
-  font-weight: 700;
-  padding: 5px;
-}
-.works ol li:nth-child(odd) h2 {
+.works ol li:nth-child(odd) h2,
+.works ol li:nth-child(even) h2 {
   margin: 3px 0 0;
   font-family: Raleway, sans-serif;
   font-size: 24px;
-  text-align: right;
-  padding: 3px 80px 10px 0;
 }
-.works ol li:nth-child(odd) span {
+.works ol li:nth-child(odd) span,
+.works ol li:nth-child(even) span {
   display: block;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
-  text-align: right;
-  padding: 0 70px 18px 0;
-  border-right: 2px solid #000000;
   box-sizing: border-box;
 }
-.works ol li:nth-child(even) {
-  position: relative;
-  text-align: left;
-  padding-left: calc(50% - 1px);
-}
+.works ol li:nth-child(odd):after,
 .works ol li:nth-child(even):after {
   position: absolute;
   left: calc(50% - 21px);
@@ -527,22 +519,35 @@ label,
   font-weight: 700;
   padding: 5px;
 }
+.works ol li:nth-child(odd) {
+  padding-right: calc(50% - 1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: right;
+}
+.works ol li:nth-child(odd) h2 {
+  text-align: right;
+  padding: 3px 80px 10px 0;
+}
+.works ol li:nth-child(odd) span {
+  text-align: right;
+  padding: 0 70px 18px 0;
+  border-right: 2px solid #000000;
+}
+.works ol li:nth-child(even) {
+  text-align: left;
+  padding-left: calc(50% - 1px);
+}
 .works ol li:nth-child(even) h2 {
-  margin: 3px 0 0;
-  font-family: Raleway, sans-serif;
-  font-size: 24px;
   text-align: left;
   padding: 5px 0 10px 70px;
 }
 .works ol li:nth-child(even) span {
-  display: block;
-  font-family: Montserrat, sans-serif, sans-serif;
-  font-size: 16px;
   text-align: left;
   padding: 0 0 20px 70px;
   margin-bottom: 3px;
   border-left: 2px solid #000000;
-  box-sizing: border-box;
 }
 .works ol li:last-child span {
   border: none;
@@ -687,23 +692,23 @@ label,
   font-size: 16px;
 }
 
-.copyright {
+.footer {
   padding: 20px;
   background-color: #3b3b47;
   display: flex;
   justify-content: space-between;
 }
-.copyright a {
+.footer a {
   text-decoration: none;
   color: #999999;
 }
-.copyright a:hover {
+.footer a:hover {
   color: white;
 }
-.copyright span {
+.footer span {
   color: white;
 }
-.copyright a:hover span {
+.footer a:hover span {
   color: #999999;
 }
 
